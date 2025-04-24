@@ -1,1 +1,2 @@
-# JavaScript_2025.04.24
+# Study JavaScript
+  - Study and practice try-catch-finally

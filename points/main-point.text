@@ -1,0 +1,103 @@
+- A Windows Installer file, commonly known as an MSI file (Microsoft Installer), is a package file format used for installing, updating, and distributing software on Windows operating systems.
+
+
+- .msi -> A Windows installer file.
+- Purpose: Automates software installation, modification, or removal.
+
+- .zip -> A compressed file.
+- Groups multiple files or folders into one smaller package for easier storage or sharing.
+
+- .pkg -> A macOS installer file.
+- Installs software on Mac computers when you double-click it.
+
+- tar.gz -> A compressed file often used in Linux.
+
+- 64-bit operating system, x64-based processor simple and short -> A system that can handle more data at once and supports larger amounts of memory (RAM)./ A processor designed to run 64-bit operating systems and software.
+
+- ARM -> A type of processor architecture (Advanced RISC (Reduced Instruction Set Computing) Machine.)
+
+- Test case -> A test case is a single, specific set of conditions or inputs, along with expected results, that is used to verify a particular feature or functionality of the software.
+
+- A test suite is a collection of test cases grouped together, often because they share a common purpose, test similar features, or belong to the same module of the application.
+
+- Head Test -> A head test runs with a visible user interface. This means the browser or application opens in a way that the tester or automation tool can see and interact with it as if a real user were using it.
+
+-Hearless test -> A headless test runs without a visible user interface. The application or browser operates in the background, executing actions without rendering the UI to a screen.
+
+- Forward proxy vs reverse proxy ->
+  - forward proxy -> A server that sits between a client (e.g., a user's device) and the internet. ->
+    - Client → Forward Proxy → Internet/Server → Forward Proxy → Client
+  - Reverse proxy -> A server that sits between a client and a server, typically positioned on the server side.
+    - Client → Reverse Proxy → Server → Reverse Proxy → Client
+
+- TCP/IP (Transmission control protocol/Internet protocol) -> 1) Network access . 2) Internet . 3) Trasport . 4) Application
+- OSI (Open systems interconnections) -> 1)Physical . 2) Data link . 3) Network . 4) Transport . 5)Sesssion . 6) Presentation . 7) application 
+
+- IPV4 -> Four groups of numbers separated by dots, like 192.168.1.1. (32 bits (shorter addresses))
+- IPV6 -> Eight groups of letters/numbers separated by colons, like 2001:0db8:85a3:0000:0000:8a2e:0370:7334. (128 bits (much longer addresses))
+
+- TCP (Transmission Control Protocol):  is a network protocol that transfers your data over the internet from your device to a web server. TCP is connection-based, so it establishes a connection between the receiver and sender and maintains it while transferring data
+
+- TCP advantages -> 
+  - TCP operates independently of operating systems, allowing for greater interoperability across systems and devices.
+  - TCP checks for errors as it transmits data, ensuring that the data it sends reaches its destination intact.
+  - TCP optimizes and alters the speed at which is transmits data depending on the capacities of the receiver.
+  - TCP confirms that data has reached its destination and attempts a retransfer if the first transmission didn’t work.
+
+- TCP disadvantages -> 
+  - TCP uses quite a lot of bandwidth and is slower than UDP, which we’ll discuss later in this article.
+  - If even a small amount of data is lost during transmission, TCP may not load other information. For example, if one element (like an image or video) fails to load on a page, the rest of the page data may not load either.
+  - TCP doesn’t work well across local area networks or personal area networks.
+
+- UDP (User Datagram Protocol). UDP network protocol is less reliable, but faster and more straightforward than TCP. UDP is connectionless, so it doesn’t establish a prior connection between two parties. It has the potential to lose data along the way, but in return you’ll have much higher speeds. 
+
+- UDP advantages -> 
+  - UDP sends smaller packets with less overhead, reducing end-to-end delay.
+  - UDP delivers data even if some of the packets are missing, meaning that packet loss won’t disrupt the entire transmission.
+  - one UDP transmission can be sent to multiple receivers at once through broadcast and multicast functionality.
+  - UDP transmission is just faster and more efficient than other options, like TCP.
+
+- UDP disadvantages ->
+  - UDP does not check whether or not a data packet reached its destination successfully.
+  - UDP cannot guarantee that a transmission arrives intact. Some packets may have been lost, but there’s no way for the sender to clarify that from their side.
+  - If a router has to prioritize one data packet over another, it is likely to transmit a TCP packet over a UDP packet.
+  - UDP does not send data in a specific sequence, so packets can arrive in any order.
+
+- How does HTTP work? HyperText Transfer Protocol (HTTP), a TCP/IP family member, is the underlying application layer protocol for communication over the World Wide Web. It enables the exchange of information between a client (a web browser) and a server. HTTP is like a language that allows the web browser and the server to understand and interact with each other. HTTP forms the foundation of how information is requested, transmitted, and delivered over the internet
+
+- SSL (Secure Socket Layer): cryptographic protocols that encrypt and authenticate data
+- TLS (Transport Layer Security): cryptographic protocols that encrypt and authenticate data
+
+- secure authentication methods ->
+  - OAuth (Open Authorization) ->  A secure way to grant third-party applications limited access to user resources without sharing passwords.
+    - Users log in via a trusted service (e.g., Google, Facebook).
+  - Credentials (Username and Password) -> The most basic method of authenticating users to systems.
+  - Authenticate users or devices to servers using public-private key cryptography. -> 
+    - A private key is stored on the user’s device.
+    - A corresponding public key is stored on the server.
+    - Authentication happens when the private key matches the public key.
+  - SSL Certificates (Secure Sockets Layer Certificates) -> Encrypt communication between a client (browser) and a server to ensure privacy and authenticity.
+    - A server provides its SSL certificate (issued by a trusted Certificate Authority - CA).
+    - The client verifies the certificate and establishes an encrypted connection using TLS (Transport Layer Security).
+
+- console.log() and console.debug() use printf-style formatting. Below are the officially supported formatters:
+Formatter representation:
+  - %o Pretty-print an Object all on a single line.
+  - %O Pretty-print an Object on multiple lines.
+  - %s String.
+  - %d Number (both integer and float).
+  - %j JSON. Replaced with the string '[Circular]' if the argument contains circular references.
+  - %% Single percent sign ('%'). This does not consume an argument.
+
+- point -> what is %d in this string: console.log("There are %d items in your basket.", count); I think I found it. Count is a varible which 5 has been assigned it. When I use %d in string in console.log(), it should be replaced by a number (%d is placeholder for number). In this case, it has been replaced by count because the value of it is a number! (reference: https://www.programiz.com/javascript/console) 
+
+- Static Methods -> Methods like Number.isInteger() and Number.isSafeInteger() are static methods of the Number constructor. This means they are attached to the Number object itself, not to instances of Number (Number.prototype) ->
+  - tatic methods like Number.isInteger and Number.parseFloat are defined as non-enumerable properties, so they don't show up in enumerations
+- instance methods -> Methods like .toFixed() or .toString() are instance methods and belong to Number.prototype, meaning they are available on Number instances (e.g., 42..toFixed(2) or (new Number(42)).toString())
+
+- In JavaScript, enumeration refers to the process of iterating over the properties of an object. Specifically, it means identifying or listing the properties that are accessible for looping or traversal. ->
+  - When a property is enumerable, it can be listed (or iterated over) using certain methods or constructs, such as for...in, Object.keys(), or Object.entries()
+- A property that is non-enumerable will not appear in enumeration (e.g., for...in, Object.keys()), but it is still accessible if you reference it directly -> for example -> Methods like Number.isInteger and Number.isSafeInteger
+
+- in-place vs non-in-place algorithem -> in-place algorithm is an algorithm that operates directly on the input data structure without requiring extra space proportional to the input size. In other words, it modifies the input in place, without creating a separate copy of the data structure. An algorithm which is not in-place is sometimes called not-in-place or out-of-place.
+

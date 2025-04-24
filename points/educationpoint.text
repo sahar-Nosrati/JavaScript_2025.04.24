@@ -1,0 +1,101 @@
+// URL -> A URL is the full web address you type in the browser.
+// URI ->  It can be a URL, or just a name or path to identify a resource
+// API (Application Programming Interface) -> is a way for programs to talk to each other — it usually uses URLs
+// REST API (Representational State TransferR EST) -> for networked applications that uses HTTPrequests to access and manipulate data. -> Hyper TextTrasnsfer Protocol ascommunication interface -> It transfers data throughHTTP methods
+// Diagram of REST API -> Picture
+
+// structure of REST API ->
+// - URI or URL (for all request methods)
+// - request body (send information)(post, delete)
+// - parameters ->
+  // - Query parameters
+  // - path
+  // example -> ParametersExample: http://sefism.vercel.app/emails?community=slackExample:
+                               http://sefism.vercel.app/helpful-resources/beginner/interviewtipsThere
+
+// header -> HeaderUsed to send extra data, specifyingproper format and data to retrieve like status, contenttype etc.
+
+// REST API methods -> GET, POST, PUT, PATCH, DELETE
+// API status -. Codes1XX : Information, 2XX : Success, 3XX : Redirection, 4XX : Client Error, 5XX : Server ErrorWith
+// REST API properties ->
+// stateless
+// client-server architecture
+// catchable
+// uniform interface
+// layer system
+// code on demand
+// advantage of REST API ->
+// Simplicity and Clarity
+// Flexibility and Scalability
+// Interoperability and Openness
+// Maintainability and Reliability
+// Simplicity and Clarity
+
+// Different types of API
+// REST API
+// SOAP (SIMPLE OBJECT ACCESS PROTOCOL) API -> MORE reliable and secure, based xml
+// GraphQL API -> specific request for client and prevention over fetching request -> for modern application
+// Websocket API -> realtime 2-way commiunications server-client -> chat apps
+// gRPC API (goole remote procedure call API) -> Based other protocol buffers (not json or xml), very fast
+
+// synchronous vs asynchronous js -> 
+//JavaScript is single-threaded, meaning it runs one operation at a time.
+  // synchronous : Each line of code is executed one after the other. 
+  // asynchronous js  -> Some operations (like waiting for a timer or anetwork request) are started, and the program continues
+  // executing the rest of the code while waiting for those operations to finish.
+
+// What is a Promise? 
+  // A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its
+    resulting value. The it's situation contains : 
+  // Pending: The initial state.
+  // Fulfilled: The operation completed successfully.
+  // Rejected: The operation failed.
+
+// create promises -> 
+  - new Promise();
+  - fetch() function 
+  - async-await function 
+
+
+// fetch () -> returns promis contains raw data including data status, and necessary methods in order to covert raw data to accessible response data such as json format. 
+  // fetch options (for modification of data) -> 
+    - HTTP method -> determine the HTTP method -> get, post etc.
+    - body (for data modification) -> pass data along with request (body should be in json format) -> you have to convert data (object to json) by json.strify.
+    - header -> along sending json information to API, you should provide appropriate header and provid specific data such as typecontent etc. 
+  // Perform error handeling 
+
+
+// What is Async/Await? 
+  //async keyword: Used to declare a function as asynchronous. This function automatically returns a Promise.
+  // await keyword: Pauses the execution of an async function until the Promise is resolved or rejected. It makes asynchronous
+  code look and behave like synchronous code.
+
+
+//Duck API 
+  //// create promise by fetch() constructor function
+// const fetchData = fetch(
+//   "https://random-d.uk/api/random"
+// )
+//   .then((res) => res.json())
+//   .then((res) => console.log(res, res.message));
+###############################
+
+// RegExp -> Regular expressions are patterns used to match character combinations in strings
+// methods for RegExp -> 
+  // RegExp methods -> 
+      // exec() -> 
+      // test() -> 
+  // string methods -> 
+      // match(), 
+      // matchAll(), 
+      // replace(), 
+      // replaceAll(), 
+      // search(), and 
+      // split()
+
+// creating RegExp -> 
+  // Between forward slashes
+  // RegExp constructor function 
+
+// main character classes in regular expressions ->
+  // 

@@ -1,0 +1,643 @@
+- W3schools/programiz 2025.01.13 -> w3school= JavaScript Object Constructors/ programize = 
+
+
+- JavaScript is a high-level, versatile programming language primarily used to create dynamic and interactive content on websites. It allows developers to implement features like animations, form validations, real-time updates, and more, and can be used both on the client side (in web browsers) and the server side (e.g., with Node.js).
+
+- role of JS ->
+  - Change HTML Content
+  - Change HTML Attribute Values
+  - Change HTML Styles (CSS)
+  - Hide HTML Elements 
+    - Css style in order to hide HTML elements ->
+      - display: "none"
+      - visibility: hidden;
+  - Show HTML Elements
+
+- A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+
+- External JavaScript Advantages
+  - It separates HTML and code
+  - It makes HTML and JavaScript easier to read and maintain
+  - Cached JavaScript files can speed up page loads
+
+- JavaScript Display Possibilities ->
+  - Writing into an HTML element, using innerHTML.
+  - Writing into the HTML output using document.write().
+  - Writing into an alert box, using window.alert().
+  - Writing into the browser console, using console.log().
+
+- window object is the global scope object
+- statement -> In JavaScript, a statement is an instruction that the JavaScript engine executes to perform a specific action. It forms the building blocks of JavaScript code. Statements can perform actions like declaring variables, making decisions, iterating over data, or performing calculations. And it will be finished bt semicolons (best practice) 
+- JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.
+
+- The JavaScript syntax defines two types of values:
+  - Fixed values
+  - Variable values
+
+- JavaScript uses the keywords var, let and const to declare variables.
+- An equal sign is used to assign values to variables.
+
+- An expression is a combination of values, variables, and operators, which computes to a value.
+- Identifiers are used to name variables and keywords, and functions.
+- In JavaScript, we use the var or let keywords to declare variables.
+
+- Let declaration of variable ->
+  - Variables declared with let have Block Scope
+
+- Variables declared with let must be Declared before use
+
+- Variables declared with let cannot be Redeclared in the same scope 
+
+- JavaScript had Global Scope and Function Scope.
+
+- Variables declared inside a { } block cannot be accessed from outside the block
+
+- Types of JavaScript Operators
+  - Arithmetic Operators ->
+    - addition
+    - subtraction
+    - multiplication 
+    - division 
+    - modulus 
+    - exponetiation 
+    - increament 
+    - decrement 
+  - Assignment Operators -> assign values to JavaScript variables.
+  - Comparison Operators
+  - String Operators
+  - Logical Operators
+  - Bitwise Operators
+  - Ternary Operators
+  - Type Operators ->
+    - typeof
+    - instanceof
+  - Miscellaneous Operators
+
+
+- comparison operator for strings -> when you compare strings using relational operators like < or >, it compares their Unicode values (or code points) character 
+- Unicode values  character (or code points) by character -> priority of character (string) according to alphabetic sequence 
+  - String Comparison:
+    - Strings are compared lexicographically (dictionary-like order) based on their Unicode values.
+    - The comparison starts with the first character of each string.
+    - If the first characters are equal, it moves to the next characters, and so on.
+  - Unicode Values:
+        'A' has a Unicode value of 65.
+        'B' has a Unicode value of 66.
+  - Case Sensitivity:
+    - JavaScript treats uppercase letters as having lower Unicode values than lowercase letters.
+  - Special Characters:
+    - Special characters like spaces, punctuation, and symbols have their own Unicode values, which can influence the result.
+  - Numbers in Strings:
+    - Numbers in strings are compared as characters, not as numerical values. -> 
+      - console.log("2" < "10"); // false ('2' has a Unicode value of 50, '1' is 49, so "2" > "10")
+
+- The numbers (in an arithmetic operation) are called operands.
+- The operation (to be performed between the two operands) is defined by an operator.
+- Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+- When many operations have the same precedence (like addition and subtraction or multiplication and division), they are computed from left to right
+- a > b is called a boolean expression since evaluating it results in a boolean value
+
+- - JS data type ->
+  - primitive data types 
+    - Numbers -> An integer or a floating-point number.
+    - strings -> Textual data.
+    - boolean -> Any of two values: true or false.
+    - undefined -> A data type whose variable is not initialized.
+    - null -> Denotes a null value.
+    - Bigint -> An integer with arbitrary precision.
+    - symbols -> A data type whose instances are unique and immutable.
+  - Objects -> array or Key-value pairs of collection of data.
+    - built-in objects
+      - objects
+      - arrays
+      - dates
+      - maps
+      - sets
+      - intarrays
+      - floatarrays
+      - promises,
+    - user defined objects
+
+- JavaScript has dynamic types. This means that the same variable can be used to hold different data types
+- Array indexes are zero-based, which means the first item is [0], second is [1], and so on.
+- Object properties are written as name:value pairs, separated by commas.
+- In JavaScript, a variable without a value, has the value undefined. The type is also undefined. 
+- loose equlity (== or !=) vs stricly equality (=== or !==) -> The equality operators (== and !=) convert both operands to the same type before comparing their values. However, stricly equality (=== or !==) do not convert operand types before comparing their values.
+
+//function point 
+- JavaScript function -> A JavaScript function is a reusable block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+- Function parameters are listed inside the parentheses () in the function definition.
+- Function arguments are the values received by the function when it is invoked.
+- Inside the function, the arguments (the parameters) behave as local variables.
+- When JavaScript reaches a return statement, the function will stop executing
+- Functions often compute a return value. The return value is "returned" back to the "caller"
+- The () operator invokes (calls) the function
+- Accessing a function with incorrect parameters (without parameter(s)) can return an incorrect answer (NAN) 
+- Accessing a function without () returns the function and not the function result
+- As you see from the examples above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+- Variables declared within a JavaScript function, become LOCAL to the function.
+- Local variables can only be accessed from within the function.
+- Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+- Local variables are created when a function starts, and deleted when the function is completed.
+
+// programiz 2025.01.10 
+- console.log() method -> displays messages or variables in the browser's console.
+- JavaScript can also represent special numeric values such as Infinity, -Infinity, and NaN (Not-a-Number) 
+- A BigInt number is created by appending n to the end of an integer (reference: https://www.programiz.com/javascript/data-types)
+- You should avoid explicitly assigning undefined to a variable. Usually, we assign null to variables to indicate "unknown" or "empty" values.
+- JavaScript determines the type of a variable based on the value assigned to it.
+- Type Conversion ->
+  - Implicit Conversion - Automatic type conversion.
+  - Explicit Conversion - Manual type conversion.
+
+- When you use arithmetic operators like -, *, or / with numeric strings, JavaScript automatically changes those strings into numbers. 
+
+// w3schools 2025.01.11 -> object
+
+- How to Define a JavaScript Object
+  - Using an Object Literal
+  - Using the new Keyword
+  - Using an Object Constructor
+
+- object literals ({}) are also called object initializers.
+- accessing object properties -> 
+  - objectName.propertyName
+  - objectName["propertyName"]
+
+- Methods are function definitions stored as property values.
+- Objects are containers for Properties and Methods.
+- Properties are named Values.
+- Methods are Functions stored as Properties.
+- Properties can be primitive values, functions, or even other objects.
+- A primitive value is a value that has no properties or methods.
+- Objects are mutable: They are addressed by reference, not by value.
+
+// programiz 2025.01.11 -> JavaScript Comparison and Logical Operators -if-else statement 
+- Comparison operators compare two values and return a boolean value (true or false).
+- Note: In JavaScript, == is a comparison operator, whereas = is an assignment operator. If you mistakenly use = instead of ==, you might get unexpected results.
+- The == (equality) operator only checks the values of the operands and not their types.
+- However, the === (strict equality) operator checks both the values and types of the operands
+
+- The JavaScript if...else statement is used to execute/skip a block of code based on a condition.
+- the if...else statement is a conditional statement that executes a block of code only when a specific condition is met
+- The code inside { } is also called the body of the if statement. 
+- We use comparison and logical operators in our if conditions
+- We use the else keyword to execute code when the condition specified in the preceding if statement evaluates to false
+- Avoid nesting multiple if…else statements within each other to maintain code readability and simplify debugging.
+- We can replace our if…else statement with the switch statement when we deal with a large number of conditions.
+- We can use logical operators such as && and || within an if statement to add multiple conditions
+
+
+// w3schools -> object methods  
+- to display JavaScript objects are:
+  -Displaying the Object Properties by name
+  -Displaying the Object Properties in a Loop
+  -Displaying the Object using Object.values()
+  -Displaying the Object using JSON.stringify() -> JavaScript objects can be converted to a string with JSON method JSON.stringify().
+
+
+
+// programiz -> for loop 
+-  the for loop is used for iterating over a block of code a certain number of times, or to iterate over the elements of an array.
+- initialExpression - Initializes a counter variable.
+  - condition - The condition to be evaluated. If true, the body of the for loop is executed.
+  - updateExpression - Updates the value of initialExpression.
+  - Once an iteration of the loop is completed, the condition is evaluated again. The process continues until the condition is false.
+
+- A for loop can also have another for loop inside it. For each cycle of the outer loop, the inner loop completes its entire sequence of iterations
+
+// w3scools -> js objecy constructor function 
+- To create an object type we use an object constructor function.
+- It is considered good practice to name constructor functions with an upper-case first letter.
+- The Math() object is not in the list. Math is a global object. The new keyword cannot be used on Math.
+
+- Use object literals {} instead of new Object().
+-Use array literals [] instead of new Array().
+-Use pattern literals /()/ instead of new RegExp().
+-Use function expressions () {} instead of new Function().
+
+- HTML events are "things" that happen to HTML elements.
+- An HTML event can be something the browser does, or something a user does.
+- Event handlers can be used to handle and verify user input, user actions, and browser actions
+- Comparing two JavaScript objects always returns false.
+
+// programiz -> while loop
+- The while loop repeatedly executes a block of code as long as a specified condition is true.
+- We use a for loop when we need to perform a fixed number of iterations. 
+
+// w3schools -> string methods 
+- Javascript strings are primitive and immutable data type: All string methods produce a new string without altering the original string
+
+- extracting characters methods -> 
+  - The at(position) Method -> return single letter -> returns the character at a specified index (position) in a string 
+  - The charAt(position) Method -> return single letter -> returns the character at a specified index (position) in a string
+  - The charCodeAt(position) Method ->  returns the code of the character at a specified index in a string:
+  - Using property access [] like in arrays
+
+- There are 3 methods for extracting a part of a string:
+  - slice(start, end) -> extracts a part of a string and returns the extracted part in a new string 
+  - substring(start, end)
+  - substr(start, length) -> depricated 
+
+- concat() joins two or more strings. The concat() method can be used instead of the plus operator. 
+- All string methods return a new string. They don't modify the original string.
+- padstart() -> The padStart() method pads a string from the start. It pads a string with another string (multiple times) until it reaches a given length.
+- The replace() method replaces a specified value with another value in a string 
+- indexOf() -> Returns the position of the first occurrence of a substring
+- lastIndexOf() -> Returns the position of the LAST occurrence of a substring
+- Both indexOf(), and lastIndexOf() return -1 if the text is not found
+- The search() method searches a string for a string (or a regular expression) and returns the position of the match
+- difference between search() and indexOf() ->
+  - The search() method cannot take a second start position argument.
+  - The indexOf() method cannot take powerful search values (regular expressions)
+
+- search() -> Finds the first substring match in a regular expression search
+
+- regExp -> 
+  - gerenarl -> /letter(s),number etc/ -> first element match 
+  - global  -> /letter(s),number etc/g -> find all match in string or regExp 
+  - global, case-insensitive   -> /letter(s),number etc/gi -> find all match in string or regExp whithout consideration of case-sensitive 
+- The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression).
+    - 
+
+- The includes() method returns true if a string contains a specified value 
+  - includes() is case sensitive
+- The startsWith() method returns true if a string begins with a specified value
+  - startsWith() is case sensitive
+- The endsWith() method returns true if a string ends with a specified value
+- Template Strings use back-ticks (``) rather than the quotes ("") to define a string
+- Template String provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation : ${}
+- interpolation ->
+  - Variable substitution 
+  - expression substitution 
+
+- Extra large or extra small numbers can be written with scientific (exponent) notation  
+- JavaScript uses the + operator for both addition and concatenation.
+- Numbers are added. Strings are concatenated.
+- The JavaScript interpreter works from left to right.
+- NaN is a number: typeof NaN returns number
+- Infinity is a number: typeof Infinity returns number
+- Never write a number with a leading zero (like 07).
+- Some JavaScript versions interpret numbers as octal if they are written with a leading zero
+- Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2
+- Comparing two JavaScript objects always returns false
+
+// programiz -> JavaScript break Statement
+- The break statement terminates the loop immediately when it's encountered
+- The break statement is usually used inside decision-making statements such as if...else.
+
+// w3schools -> Bigint
+- JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+- create bigInt ->
+  - append n to the end of an integer -> let y = 9999999999999999n;
+  - call BigInt() -> let y = BigInt(1234567890123456789012345)
+- The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.
+
+- Converting Variables to Numbers ->
+  - Number()	Returns a number converted from its argument.
+  - parseFloat()	Parses its argument and returns a floating point number
+  - parseInt()	Parses its argument and returns a whole number
+
+- The methods above are not number methods. They are global JavaScript methods.
+- If the number cannot be converted, NaN (Not a Number) is returned.
+- The Date() method returns the number of milliseconds since 1.1.1970.
+
+- Number Object constructor Methods -> 
+  - toString()	Returns a number as a string
+  - toExponential()	Returns a number written in exponential notation
+  - toFixed()	Returns a number written with a number of decimals
+  - toPrecision()	Returns a number written with a specified length
+  - valueOf()	Returns a number as a number
+
+
+
+- global JavaScript methods (are not appred in window object(global bject)) 
+  - Number()	Returns a number converted from its argument.
+  - parseFloat()	Parses its argument and returns a floating point number
+  - parseInt()	Parses its argument and returns a whole number
+
+
+
+
+  - Number.isInteger()	Returns true if the argument is an integer
+  - Number.isSafeInteger()	Returns true if the argument is a safe integer
+  - Number.parseFloat()	Converts a string to a number
+  - Number.parseInt()	Converts a string to a whole number
+
+- Using X.isInteger() where X is a variable, will result in an error: TypeError X.isInteger is not a function.
+
+- Number methods as static methods -> 
+  - Number.isInteger()	Returns true if the argument is an integer
+  - Number.isSafeInteger()	Returns true if the argument is a safe integer
+
+- array -> An array is a special variable, which can hold more than one value
+- An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+- create an array -> 
+  - array literal -> [];
+  - USING JS new keyword 
+
+- Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+- Arrays use numbers to access its "elements" 
+- you can have variables of different types in the same Array. 
+- Accessing the Last Array Element -> fruits[fruits.length - 1] 
+- Arrays with named indexes are called associative arrays (or hashes).
+- JavaScript does not support arrays with named indexes.
+- In JavaScript, arrays always use numbered indexes.  
+- In JavaScript, arrays use numbered indexes.  
+- In JavaScript, objects use named indexes.
+- You should use objects when you want the element names to be strings (text).
+- You should use arrays when you want the element names to be numbers.
+
+- How to Recognize an Array -> 
+  - Array.isArray(fruits);
+  - The instanceof operator returns true if an object is created by a given constructor -> fruits instanceof Array
+
+- The at()(array method) method returns an indexed element from an array. 
+
+- copyWithin(target)
+- copyWithin(target, start)
+- copyWithin(target, start, end)
+
+- Parameters:
+This method accepts three parameters as mentioned above and described below:  
+
+- target: The index position to copy the elements to(Required).
+- start: It is optional. The index position to start copying elements from (default is 0).
+- end: It is optional. The index position to stop copying elements from (default is array.length).
+- Return value: It returns the modified array.
+
+- Zero-based index at which to copy the sequence to, converted to an integer. This corresponds to where the element at start will be copied to, and all elements between start and end are copied to succeeding indices.
+Negative index counts back from the end of the array — if -array.length <= target < 0, target + array.length is used.
+If target < -array.length, 0 is used.
+If target >= array.length, nothing is copied.
+If target is positioned after start after normalization, copying only happens until the end of array.length (in other words, copyWithin() never extends the array).
+start
+
+Zero-based index at which to start copying elements from, converted to an integer.
+Negative index counts back from the end of the array — if -array.length <= start < 0, start + array.length is used.
+If start < -array.length, 0 is used.
+If start >= array.length, nothing is copied.
+end Optional
+Zero-based index at which to end copying elements from, converted to an integer. copyWithin() copies up to but not including end.
+
+Negative index counts back from the end of the array — if -array.length <= end < 0, end + array.length is used.
+If end < -array.length, 0 is used.
+If end >= array.length or end is omitted, array.length is used, causing all elements until the end to be copied.
+If end implies a position before or at the position that start implies, nothing is copied.
+
+
+- example -> const exampleArray = [789, 478, "sahar", 444, "BMW", 123, 256, 78];
+  - const copyOfExampleArray = exampleArray.copyWithin(1, 4); -> 
+    - the elements from index = 4 -> were selected 
+    - The copy of them were replaced from index=1 -> [789, 'BMW', 123, 256, 78, 123, 256, 78]
+  - const exampleArray = [789, 478, "sahar", 444, "BMW", 123, 256, 78];
+    - const copyOfExampleArray2 = exampleArray.copyWithin(3, 0, 2); -> const exampleArray = [789, 478, "sahar", 444, "BMW", 123, 256, 78];
+      - the elements from index = 0 to 4(excluded) -> were selected
+      - - The copy of them were replaced from index=3 ->  [789, 478, 'sahar', 789, 478, 123, 256, 78] 
+
+- The difference between the new toSpliced() method and the old splice() method is that the new method creates a new array, keeping the original array unchanged, while the old method altered the original array. 
+
+- The slice() method slices out a piece of an array into a new array
+- toString() -> JavaScript automatically converts an array to a comma separated string when a primitive value is expected
+- The indexOf() method searches an array for an element value and returns its position
+- Array.indexOf() returns -1 if the item is not found. 
+- If the item is present more than once, it returns the position of the first occurrence.
+- Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element. 
+- Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+- Array.includes() allows to check for NaN values. Unlike Array.indexOf().
+- The findIndex() method returns the index of the first array element that passes a test function.
+- ES2023 added the findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.
+- The findLastIndex() method finds the index of the last element that satisfies a condition.
+
+- arr.sort(compareFunction(optional)); -> Reference -> https://www.freecodecamp.org/news/how-does-the-javascript-sort-function-work/
+- if a compare function is not provided in the .sort() operation, all array elements are sorted by first converting them to strings and then comparing them 
+
+- Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list
+- We start with second element of the array as first element in the array is assumed to be sorted.
+- Compare second element with the first element and check if the second element is smaller then swap them.
+- Move to the third element and compare it with the first two elements and put at its correct position
+- Repeat until the entire array is sorted.
+
+- To find the lowest or highest value you have 3 options:
+  - Sort the array and read the first or last element
+  - Use Math.min() or Math.max()
+  - Write a home made function
+
+- sorting array woith object elements -> 
+
+[
+  { id: 2, name: 'Zack', age: 35 },
+  { id: 1, name: 'John', age: 41 },
+  { id: 3, name: 'Peter', age: 47 }
+]
+
+  - response.sort((a, b) => b.age - a.age) -> sorting based on numeric value of property 
+  - response.sort((a, b) => b.name.localeCompare(a.name)) -> sorting based on string value of property 
+
+- Stable sorting means that when two elements have the same value, their order stays the same as in the original list. 
+- The forEach() method calls a function (a callback function) once for each array element. 
+- The map() method creates a new array by performing a function on each array element.
+- The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+- The filter() method creates a new array with array elements that pass a test.
+- The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+  - reduce() contains two parameters -> 
+    - callback function -> takes 4 parameters -> 
+      - accumulator, value, index, array
+    - initial value 
+- The reduceRight() works from right-to-left in the array.
+- The Array.keys() method returns an Array Iterator object with the keys of an array. 
+- The entries() method returns an Array Iterator object with key/value pairs -> 
+  - Array Iterator object -> in this case it is real array and all methods of array can be applied for it. 
+
+- the Array with() method as a safe way to update elements in an array without altering the original array.
+
+- Math.round(x)	Returns x rounded to its nearest integer 
+- Math.ceil(x)	Returns x rounded up to its nearest integer
+- Math.floor(x)	Returns x rounded down to its nearest integer
+- Math.trunc(x)	Returns the integer part of x (new in ES6)
+
+- Math.random() used with Math.floor() can be used to return random integers. 
+- destructuring assignment -> to unpack values from arrays, or properties from objects, into distinct variables.
+- there are 2 pattern for destructuring ->
+  - Binding pattern -> const [a, b] = [1,2]; 
+  - Assignment pattern -> ({1, 2} = {a:5, b:6})
+
+- Defualu valu for destructuring -> the value of element or property is not presented or undefined -> const { b = 2 } = { b: undefined }; // b is 2
+- property ...rest in destructuring -> 
+  - remaining elements of the iterable into a new array -> rest element 
+  - writ copies all enumerable own properties of the object that are not already picked off by the destructuring pattern into a new object -> rest object
+
+- example of destructuring of nested object 
+      const numberType = {
+       evenNumber : [2, 4, 6],
+       oddNumber : [3, 5, 7],
+       details: { age: 30, country: "Iran" }
+     }
+
+    const {details:{age,country} } = numberType;
+    console.log(age,country );
+
+
+- Spread operator -> syntax allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected
+- Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element.
+
+- application of spread operator -> 
+  - copy of an array or object 
+  - merage or cocatination of arrays 
+  - Conditionally adding values to an array
+  - Passing itarable Arguments to Functions and spread them in place 
+  - Copying and merging objects
+  - Overriding properties in new object 
+  - Conditionally adding properties to an object
+
+- Rest parameters/operator -> The rest parameter syntax allows a function to accept an indefinite number of arguments as an array
+
+// JS w3schools 2025.03.13
+- Falsy value -> 0, undefined, null, "" , False, NAN 
+- When comparing a string with a number, JavaScript will convert the string to a number when doing the comparison 
+- Nullish coalescing operator (??) -> returns the first argument if it is not nullish (null or undefined). Otherwise it returns the second argument.
+- Optional chaining operator -> The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).
+- Conditional statements are used to perform different actions based on different conditions.
+
+// w3svchools 2025.03.15
+- Loops can execute a block of code a number of times.
+- JavaScript supports different kinds of loops:
+    - for - loops through a block of code a number of times
+    - for/in - loops through the properties of an object
+    - for/of - loops through the values of an iterable object
+    - while - loops through a block of code while a specified condition is true
+    - do/while - also loops through a block of code while a specified condition is true
+
+- It is better to use a for loop, a for of loop, or Array.forEach() when the order is important.
+- The forEach() method calls a function (a callback function) once for each array element.
+- The JavaScript for of statement loops through the values of an iterable object.
+- The while loop loops through a block of code as long as a specified condition is true.
+
+
+// w3schools 205.03.28
+- Iterables are iterable objects (like Arrays).
+- Iterating -> means looping over a sequence of elements.
+- set -> a kind of data structure collection in js in order to storage of different data types and length-> properties -> 
+    - The elements ossur once in collection
+    - It contains its methods
+    - The elements can not be accessed by index beacuse the sequence of elements can be be garanteed 
+    - Iteration on it by for ... of loop 
+
+
+
+- The iterator protocol defines an standard to produce a sequence of values.
+- Iterator protocols -> return object {} -> the object contains next() (method) -> return {value, done} -.
+
+- main structure -> 
+const myIterable = {
+  data: ["a", "b", "c"],
+  [Symbol.iterator]() {
+    let index = 0;
+    return {
+      next: () => {
+        if (index < this.data.length) {
+          return { value: this.data[index++], done: false };
+        } else {
+          return { done: true };
+        }
+      }
+    };
+  }
+};
+
+- point -> if object contains [Symbol.iterator](){} -> the object is iterable
+
+- A Map holds key-value pairs where the keys can be any datatype.
+- Map vs Set -> 
+  - Add existing value(s) to set -> keeping first value and ignoring second value
+  - Add existing value(s) to Map -> Overwriding second value on first value 
+
+- set() ->
+    - add elements to a map 
+    - update value of element
+
+- The size property returns the number of elements in a map
+- delete() -> remove element from map -> 
+  - print the result -> Boolean
+
+- clear() -> remove all elements of map
+- forEach(() => {}) -> Iterate on each key-value paire and execute callback on each key-value pair -> return -> void
+
+- map.entries() -> return Mapiterator object -> access to each key-value pair -> for ... of loop
+- Map.keys() -> return Mapiterator object -> access to each key -> for ... of loop
+- Map.values() -> return Mapiterator object -> access to each value -> for ... of loop
+- Map.groupBy()? -> It’s a method that groups items from an array into a Map, based on a function you provide
+
+- The typeof operator returns the data type of a JavaScript variable.
+- A complex data type can store multiple values and/or different data types together.
+- The typeof operator returns only two types:
+  - object
+  - function
+
+- typeof function -> function
+- in order to detrmine typeof an operator or objects (array, set map) -> 
+  - use built-in method isArray()
+
+- The typeof of an undefined variable is undefined.
+- In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+
+- null vs undefined -> undefined and null are equal in value but different in type
+- The void operator evaluates an expression and returns undefined
+- This operator is often used to obtain the undefined primitive value, using "void(0)" (useful when evaluating an expression without using the return value)
+
+- JavaScript variables can be converted to a new variable and another data type:
+  - By the use of a JavaScript function
+  - Automatically by JavaScript itself
+
+- Number Methods -> convert syring to number -> 
+  - Number()
+  - parseFloat()	Parses a string and returns a floating point number
+  - parseInt()	Parses a string and returns an integer
+
+- The unary + operator can be used to convert a variable to a number -> 
+  - let stringNumber = "9";
+   let convertedToNumber = + stringNumber
+
+
+- strigifing methods -> convert number to string 
+  - string()
+  - toString()
+  - toExponential(fractionDigits) -> eturns a string representing this number in exponential notation.
+    - fractionDigits -< An integer specifying the number of digits after the decimal point
+    - return -> A string representing the given Number object in exponential notation with one digit before the decimal point, rounded to fractionDigits digits after the decimal point (Returns a string containing a number represented in exponential notation.)
+  - toFixed() -> returns a string representation of a number without using exponential notation and with exactly digits digits after the decimal point.
+  - toPrecision() ->	returns a string representing this number to the specified number of significant digits.
+- JavaScript automatically calls the variable's toString() function when you try to "output" an object or a variable
+- [] -> boolean -> true
+- {} -> string -> [object object]
+
+- Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+- Throw, and Try...Catch...Finally
+     - The try statement defines a code block to run (to try).
+     - The catch statement defines a code block to handle any error.
+     - The finally statement defines a code block to run regardless of the result.
+     - The throw statement defines a custom error.
+
+- main errors in js ->
+  - syntax error
+  - type error
+  - reference error 
+
+- Custum error handeling -> 
+  - create customError function(message) (constructor function) contains -> {
+      - this.messages = message
+      - this.name = "name of error"
+      - this.stack = `${this.name}: ${this.message}`
+    - call customError function by new throw customError("this is a message") 
+  }
+
+
+- Use of throw Error("message") object and throw new Error("message") constructor function -> 
+  - this object and constructur function contain -> 
+    - {
+      - this.messages = message
+      - this.name = "Error"
+      - this.stack = `${this.name}: ${this.message}`
+  }
